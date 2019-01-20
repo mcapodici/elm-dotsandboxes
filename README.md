@@ -1,2 +1,5 @@
-# elm-dotsandboxes
-Dots and Boxes game, in elm
+# Elm Dots & Boxes
+
+This is the Dots and Boxes game, in Elm
+
+
