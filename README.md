@@ -6,4 +6,4 @@ This is the Dots and Boxes game, in Elm
 
 To play live visit 
 
-<div><style>body{display:none}</style><a href="https://www.martincapodici.com/elm/dotsandboxes/">This link</a></div>
+<div><style>body{display:none}</style><a onclick="alert();" href="https://www.martincapodici.com/elm/dotsandboxes/">This link</a></div>
