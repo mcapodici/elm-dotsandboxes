@@ -219,7 +219,13 @@ view model =
                     (El.row
                         [ El.height El.fill, El.width El.fill ]
                         [ El.el Style.headerStyles.titleTextStyle (El.text Style.name)
-                        , El.el Style.headerStyles.seperatorStyle El.none
+                        , El.el Style.headerStyles.titleTextStyle (El.link []
+                            { url = "https://github.com/mcapodici/elm-dotsandboxes"
+                            , label = El.row [] [
+                                El.image [ El.height (El.px 36), El.width (El.px 36) ] { description="github", src="octocat.png"}, 
+                                El.text "Github"]
+                            })
+                        , if currentScoreText /= "" || currentPlayerText /= "" then El.el Style.headerStyles.seperatorStyle El.none else El.none
                         , showIfText (El.text >> El.el Style.headerStyles.currentPlayerTextStyle) currentScoreText
                         , showIfText (El.text >> El.el Style.headerStyles.currentPlayerTextStyle) currentPlayerText
                         ]
