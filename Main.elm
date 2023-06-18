@@ -219,7 +219,7 @@ view model =
                     (El.row
                         [ El.height El.fill, El.width El.fill ]
                         [ El.el Style.headerStyles.titleTextStyle (El.text Style.name)
-                        , El.el Style.headerStyles.titleTextStyle (El.link []
+                        , El.el Style.headerStyles.titleTextStyle (El.newTabLink []
                             { url = "https://github.com/mcapodici/elm-dotsandboxes"
                             , label = El.row [] [
                                 El.image [ El.height (El.px 36), El.width (El.px 36) ] { description="github", src="octocat.png"}, 
