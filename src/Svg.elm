@@ -81,7 +81,7 @@ gameToSvgWins game =
 
                     --, alignmentBaseline AlignmentCentral
                     ]
-                    [ text <|
+                    [ Html.text <|
                         case player of
                             PlayerA ->
                                 "A"
@@ -120,7 +120,7 @@ singleSvgLine allowPlayByClick lineDisplayInfo =
                , x2 (px <| originX + plusX)
                , y2 (px <| originY + plusY)
                , strokeWidth (px Style.gameStyles.lineWidth)
-               , onClick <|
+               , TypedSvg.Events.onClick <|
                     if not allowPlayByClick || lineDisplayInfo.played then
                         NoOp
 
